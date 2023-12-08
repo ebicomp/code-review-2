@@ -1,10 +1,12 @@
-
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
-
-
 
 body {
   font-family: Tahoma, sans-serif;
@@ -15,32 +17,28 @@ body {
   font-weight: bold;
 }
 
-
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
-
 
 header {
   background-color: white;
   color: black;
   text-align: left;
   padding: 10px;
-  border-bottom: 1px solid grey; 
+  border-bottom: 1px solid grey;
 }
 
+#logo img {
+  height: auto;
+  margin-right: 10px;
+  max-width: 100%;
+}
 
-  #logo img {
-    height: auto; 
-    margin-right: 10px;
-    max-width:100%;
-  }
-  
-#placeholder{
+#placeholder {
   width: 500;
   height: 200;
-  
 }
 
 #companyname {
@@ -73,131 +71,54 @@ header {
   font-weight: lighter;
 }
 
-
-
 form {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-form label {
+/*I want you to pay attention to this part*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
   display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-form input[type="text"],
-form select,
-form textarea {
-  width: calc(100% - 20px);
-  padding: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
   margin-bottom: 10px;
-  box-sizing: border-box;
-  display: block; 
 }
-
-
-form .name-fields {
-  display:inline-block; 
-  gap: 10px; 
-  box-sizing: border-box;
-  
-}
-
-
- 
-.address-fields-container {
+.container-two-columns {
   display: flex;
-  flex-wrap: wrap; 
-
+  gap: 10px;
 }
-
-.address-city-state {
-  display: flex;
-  flex: 1; 
+.container-two-columns div {
+  flex: 1;
 }
-
-
-form input[type="text"] {
-  margin-right: 20px; 
+ul {
+  list-style: none;
 }
-
-
-form input[type="radio"] {
-  margin-right: 5px;
-}
-
-.form-container {
-  display: flex;
-  justify-content:space-between
-
-}
-.form-container > div {
-  flex:1;
-  
-  margin-right: 10px; 
-  
-}
-
-
-
-
-  .name-fields-container {
-    display: flex;
-  }
-  
-  .name-fields {
-    flex: 1;
-    margin-right: 10px; 
-  }
-  
-
-
-.button {
-  background-color: green;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 20px auto 0; 
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  display: block; }
-
-.button:hover {
-  background-color: whitesmoke;
-}
-
-
-table {
+#myTable {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 13px;
-  font-family: Tahoma, sans-serif;
-  font-weight: bold;
 }
 
-table, th, td {
+#myTable th,
+#myTable td {
   border: 1px solid #ddd;
-}
-
-th, td {
   padding: 8px;
   text-align: left;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+#myTable th {
+  background-color: #f2f2f2;
+  color: black;
 }
 
-#list-style {
-  list-style: none;
+#myTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#myTable tr:hover {
+  background-color: #ddd;
 }

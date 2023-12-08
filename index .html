@@ -1,202 +1,130 @@
 <div class="container">
-  
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="styling.css" rel="stylesheet"/>
-    <title>ACME GLOBAL COMPANY</title>
-  </head>
-  <body>
-    <header>
-      <div id="logo">
-        <img src="company.png" alt="Company Logo">
-      </div>
-      <div id="container">
-        <div id="companyname">ACME GLOBAL COMPANY</div>
-        <address id="addressName">
-          <div>ACME GLOBAL COMPANY</div>
-          <div>1234 Maple Street, Houston, TX 77002</div>
-          <div>example@example.com</div>
-          <div>www.example.com</div>
-          <div>(123) 123-4567</div>
-        </address>
-      </div>
-    </header>
-
-    <form>
-      <h2 id="customerDetails">Customer Details:</h2>
-
-      
-      <div>
-        <label for="first-name">Full Name *</label>
-        <div id="fullName" class="name-fields-container">
-          <input
-            class="name-fields"
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="First Name"
-            required
-          />
-          <input
-            class="name-fields"
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="Last Name"
-            required
-          />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link href="styling.css" rel="stylesheet" />
+      <title>ACME GLOBAL COMPANY</title>
+    </head>
+    <body>
+      <header>
+        <div id="logo">
+          <img src="company.png" alt="Company Logo" />
         </div>
-      </div>
-      
-   
+        <div id="container">
+          <div id="companyname">ACME GLOBAL COMPANY</div>
+          <address id="addressName">
+            <div>ACME GLOBAL COMPANY</div>
+            <div>1234 Maple Street, Houston, TX 77002</div>
+            <div>example@example.com</div>
+            <div>www.example.com</div>
+            <div>(123) 123-4567</div>
+          </address>
+        </div>
+      </header>
 
-      <div>
-        <label for="Street Address">Address *</label>
-        <div id="address" class="address-fields-container">
-          <input
-            class="address-fields"
-            type="text"
-            id="Street Address"
-            name="Street Address"
-            placeholder="Street Address"
-            required
-          />
-          <input
-            class="address-fields"
-            type="text"
-            id="Street Address Line 2"
-            name="Street Address Line 2"
-            placeholder="Street Address Line 2"
-            required
-          />
-          <div class="address-city-state">
-            <input
-              class="address-fields"
-              type="text"
-              id="City"
-              name="City"
-              placeholder="City"
-              required
-            />
-            <input
-              class="address-fields"
-              type="text"
-              id="State/Province"
-              name="State/Province"
-              placeholder="State/Province"
-              required
-            />
+      <form>
+        <h2 id="customerDetails">Customer Details:</h2>
+
+        <div>
+          <div>Full Name *</div>
+          <div class="container-two-columns">
+            <input class="name-fields" type="text" id="first-name" name="first-name" placeholder="First Name" required />
+            <input class="name-fields" type="text" id="last-name" name="last-name" placeholder="Last Name" required />
           </div>
-          <input
-            class="address-fields"
-            type="text"
-            id="Postal / Zip Code"
-            name="Postal / Zip Code"
-            placeholder="Postal / Zip Code"
-            required
-          />
         </div>
-      </div>
-      
-      <div id="placeholder">
-        <img src="placeholder.jpg" alt="Placeholder Image">
-      </div>
 
-      
-      <div class="form-container">
         <div>
-          <label for="phone-number">Phone Number *</label>
-          <input
-            type="text"
-            id="phone-number"
-            name="phone-number"
-            placeholder="(000) 000-0000"
-            required
-          />
+          <div>Address *</div>
+          <div>
+            <input type="text" id="Street Address" name="Street Address" placeholder="Street Address" required />
+            <input type="text" id="Street Address Line 2" name="Street Address Line 2" placeholder="Street Address Line 2" required />
+            <div class="container-two-columns">
+              <input type="text" id="City" name="City" placeholder="City" required />
+              <input class="address-fields" type="text" id="State/Province" name="State/Province" placeholder="State/Province" required />
+            </div>
+            <input type="text" id="Postal / Zip Code" name="Postal / Zip Code" placeholder="Postal / Zip Code" required />
+          </div>
         </div>
-      
+
+        <div id="placeholder">
+          <img src="placeholder.jpg" alt="Placeholder Image" />
+        </div>
+
+        <div class="container-two-columns">
+          <div>
+            <label for="phone-number">Phone Number *</label>
+            <input type="text" id="phone-number" name="phone-number" placeholder="(000) 000-0000" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="ex: email@yahoo.com" required />
+          </div>
+        </div>
+
+        <div class="container-two-columns">
+          <div>
+            <label for="source">How did you hear about us?</label>
+            <select id="source" name="source">
+              <option value="Please select">Please select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="specify">Please Specify *</label>
+            <input type="text" id="specify" name="specify" />
+          </div>
+        </div>
+
         <div>
-          <label for="email">Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="ex: email@yahoo.com"
-            required
-          />
+          <label for="feedback">Feedback about us:</label>
+          <textarea class="form-control" id="Feedback" name="feedback" rows="3"></textarea>
         </div>
-      </div>
 
-      <div class="form-container">
-      <div>
-        <label for="source">How did you hear about us?</label>
-        <select id="source" name="source">
-          <option value="Please select">Please select</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
+        <div>
+          <label for="suggestions">Suggestions for further improvement:</label>
+          <textarea class="form-control" id="Suggestions" name="suggestions" rows="3"></textarea>
+        </div>
 
-      <div>
-        <label for="specify">Please Specify *</label>
-        <input
-        type="text"
-        id="specify"
-        name="specify"
-        />
-      </div>
-      </div>
+        <div>
+          <label for="recommendation">Will you be willing to recommend us?</label>
+          <ul>
+            <li><input type="radio" name="recommendation" value="Yes" /> Yes</li>
+            <li><input type="radio" name="recommendation" value="No" /> No</li>
+            <li><input type="radio" name="recommendation" value="Maybe" /> Maybe</li>
+          </ul>
+        </div>
 
-  
-      <div>
-        <label for="feedback">Feedback about us:</label>
-        <textarea class="form-control" id="Feedback" name="feedback" rows="3"></textarea>
-      </div>
+        <div>
+          <div for="reference">Please give reference of any two people whom you feel:</div>
+          <table id="myTable">
+            <tr>
+              <th></th>
+              <th>Full Name</th>
+              <th>Address</th>
+              <th>Contact Number</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </form>
 
-      <div>
-        <label for="suggestions">Suggestions for further improvement:</label>
-        <textarea class="form-control" id="Suggestions" name="suggestions" rows="3"></textarea>
-      </div>
-
-      <div>
-        <label for="recommendation">Will you be willing to recommend us?</label>
-        <ul id="list-style">
-          <li><input type="radio" name="recommendation" value="Yes"> Yes</li>
-          <li><input type="radio" name="recommendation" value="No"> No</li>
-          <li><input type="radio" name="recommendation" value="Maybe"> Maybe</li>
-        </ul>
-      </div>
-
-      <div>
-        <label for="reference">Please give reference of any two people whom you feel:</label>
-        <table>
-          <tr>
-            <th></th>
-            <th>Full Name</th>
-            <th>Address</th>
-            <th>Contact Number</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-    </form>
-
-    <button class="button">Submit</button>
-  </body>
-</html>
+      <button class="button">Submit</button>
+    </body>
+  </html>
 </div>
