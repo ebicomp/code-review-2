@@ -1,0 +1,203 @@
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid grey; 
+}
+
+
+  #logo img {
+    height: auto; 
+    margin-right: 10px;
+    max-width:100%;
+  }
+  
+#placeholder{
+  width: 500;
+  height: 200;
+  
+}
+
+#companyname {
+  margin-top: 10px;
+}
+
+#addressName {
+  font-family: Tahoma, sans-serif;
+  line-height: 1.5;
+  text-align: right;
+}
+
+#addressName::before {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#addressName > :nth-child(2) {
+  font-size: smaller;
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+#addressName > :nth-child(3),
+#addressName > :nth-child(4),
+#addressName > :nth-child(5) {
+  font-size: xx-small;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: block; 
+}
+
+
+form .name-fields {
+  display:inline-block; 
+  gap: 10px; 
+  box-sizing: border-box;
+  
+}
+
+
+ 
+.address-fields-container {
+  display: flex;
+  flex-wrap: wrap; 
+
+}
+
+.address-city-state {
+  display: flex;
+  flex: 1; 
+}
+
+
+form input[type="text"] {
+  margin-right: 20px; 
+}
+
+
+form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-container {
+  display: flex;
+  justify-content:space-between
+
+}
+.form-container > div {
+  flex:1;
+  
+  margin-right: 10px; 
+  
+}
+
+
+
+
+  .name-fields-container {
+    display: flex;
+  }
+  
+  .name-fields {
+    flex: 1;
+    margin-right: 10px; 
+  }
+  
+
+
+.button {
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px auto 0; 
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: block; }
+
+.button:hover {
+  background-color: whitesmoke;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 13px;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#list-style {
+  list-style: none;
+}
